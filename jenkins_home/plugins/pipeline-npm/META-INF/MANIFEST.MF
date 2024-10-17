@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Pipeline NPM Integration Plugin
+Specification-Version: 0.0
+Implementation-Title: Pipeline NPM Integration Plugin
+Implementation-Version: 320.vc9266a_b_fc60a_
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: pipeline-npm
+Short-Name: pipeline-npm
+Long-Name: Pipeline NPM Integration Plugin
+Url: https://plugins.jenkins.io/pipeline-npm/
+Plugin-Version: 320.vc9266a_b_fc60a_
+Hudson-Version: 2.462.3
+Jenkins-Version: 2.462.3
+Plugin-Dependencies: workflow-step-api:678.v3ee58b_469476,config-file-pr
+ ovider:978.v8e85886ffdc4
+Plugin-Developers: 
+Plugin-License-Name: The MIT license
+Plugin-License-Url: http://www.opensource.org/licenses/mit-license.php
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/pipeline-npm-
+ plugin
+Plugin-ScmTag: c9266abfc60a000eef28a916db3a0ae0980501f8
+Plugin-ScmUrl: https://github.com/jenkinsci/pipeline-npm-plugin
+Plugin-GitHash: c9266abfc60a000eef28a916db3a0ae0980501f8
+Implementation-Build: c9266abfc60a000eef28a916db3a0ae0980501f8
+

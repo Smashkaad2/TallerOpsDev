@@ -1,0 +1,23 @@
+version: '3'
+services:
+  jenkins:
+    build:
+      context: ./jenkins
+      dockerfile: DockerFile
+    container_name: jenkins-server
+    ports:
+      - "8080:8080"  # Puerto Jenkins
+      - "50000:50000"  # Puerto para agentes Jenkins
+    environment:
+      JENKINS_USER: admin
+      JENKINS_PASS: 123456
+      JAVA_OPTS: "-Djenkins.install.runSetupWizard=false"
+    volumes:
+      - ./jenkins_home:/var/jenkins_home  # Volumen persistente para Jenkins
+      - /var/run/docker.sock:/var/run/docker.sock  # Permitir que Jenkins gestione Docker
+    networks:
+      - jenkins-net
+
+networks:
+  jenkins-net:
+    driver: bridge
